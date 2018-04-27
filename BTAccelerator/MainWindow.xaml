@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BTAccelerator"
         mc:Ignorable="d"
-        Title="BT Accelerator" Height="76.994" Width="240.601" ResizeMode="CanMinimize">
+        Title="BT Accelerator" Height="80" Width="300" ResizeMode="CanMinimize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <TextBox MaxHeight="20"  MinWidth="100" MaxWidth="400" Grid.Column="0" Name="txtMultiplier" HorizontalAlignment="Right" />
-        <Button Name="btnUpdate" HorizontalAlignment="Left" MinWidth="66" MaxHeight="20" MaxWidth="200" Grid.Column="1" Content="Update" Click="btnUpdate_Click"/>
+        <TextBox Height="20" Width="130" Grid.Column="0" Name="txtMultiplier" HorizontalAlignment="Right" ToolTip="Enter a multiplier here" Text="1.0" MaxLength="20" HorizontalContentAlignment="Right"/>
+        <Button Name="btnUpdate" HorizontalAlignment="Left" Height="20" Grid.Column="1" Content="Update" Click="btnUpdate_Click"/>
     </Grid>
 </Window>
