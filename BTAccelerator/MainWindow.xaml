@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BTAccelerator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="BT Accelerator" Height="76.994" Width="240.601" ResizeMode="CanMinimize">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBox MaxHeight="20"  MinWidth="100" MaxWidth="400" Grid.Column="0" Name="txtMultiplier" HorizontalAlignment="Right" />
+        <Button Name="btnUpdate" HorizontalAlignment="Left" MinWidth="66" MaxHeight="20" MaxWidth="200" Grid.Column="1" Content="Update" Click="btnUpdate_Click"/>
     </Grid>
 </Window>
